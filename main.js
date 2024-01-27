@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to("#page1", {
-        backgroundColor: "#000",
+        backgroundColor:"#000",
         scrollTrigger: {
-            trigger: "#page1",
-            start: "top -60%",
-            end: "top -80%",
+            trigger: ".page1    ",
+            start: "top -0%",
+            end: "top -100%",
+            // markers:true,
             scrub: 1,
         },
     });

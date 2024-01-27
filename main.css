@@ -20,6 +20,8 @@ body{
     position: relative;
    min-height: 100vh;
    width: 100%;
+   z-index: 101;
+   
 
    
 }
@@ -111,6 +113,7 @@ text-align: center;
 
 
 .container{
+    
     min-height: 100vh;
     width: 100%;
     position: absolute;
@@ -130,7 +133,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loader 4s cubic-bezier(.34,1.56,.64,1) infinite;
+    animation: loader 4s cubic-bezier(.34,1.56,.64,1)  infinite;
     z-index: -1;
    
    
@@ -141,9 +144,9 @@ text-align: center;
 .face{
     position: absolute;
     /* opacity: 0; */
-    height: 250px;
-    width: 250px;
-    background-color: #212121;
+    height: 300px;
+    width: 300px;
+    background-color:#212121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,12 +288,3 @@ video{
 
 
 /* from here non brain div start */
-#cover{
-    height: 400px;
-    width: 40px;
-    position: absolute;
-    z-index: 0;
-    bottom: 13rem;
-    left: 37.5rem;
-    background-color: #212121;
-}
