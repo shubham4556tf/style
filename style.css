@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+body{
+    width: 100%;
+    height: 200vh;
+    
+}
+#mainpage{
+    
+    
+    z-index: 100;
+
+  
+}
+#page1{
+    position: relative;
+   min-height: 100vh;
+   width: 100%;
+
+   
+}
+#page2{
+
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    bottom: 0;
+     /* background-color: transparent; */
+    z-index: 9  ;
+    display: flex;
+    justify-content: center;
+align-items: center;
+text-align: center;
+
+   
+    
+
+}
+/* this is for page 2 insside div content */
+#h1 {
+   
+
+    font-size: 30px;
+ 
+    font-weight: 10;
+    color: whitesmoke;
+    
+    
+}
+#h1 h1{
+    font-family: cursive ;
+    animation: fade 4s linear;
+}
+#nav h3:hover{
+    color: rgba(0, 128, 0, 0.714);
+
+}
+#nav h3:active{
+    color: rgba(255, 0, 0, 0.473);
+    font-size: 21.5px;
+
+}
+
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#page2 h1 p{
+    font-size: 32px;
+    font-weight: 1;
+}
+#nav{
+   
+   
+    position: absolute;
+    top:30px;
+    height: 15vh;
+    width: 100%;
+    /* z-index: 858556; */
+    /* background-color: white; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+   padding-left: 50px;
+   
+    
+
+}
+#nav h3{
+    font-family: cursive;
+    font-weight: 2;
+    font-size: 22px;
+}
+
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: #212121;
+    z-index: 99;
+   
+
+}
+
+
+.cube{
+    position: absolute;
+    top:-20%;
+    height: 100vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 4s cubic-bezier(.34,1.56,.64,1) infinite;
+    z-index: -1;
+   
+   
+
+    
+   
+}
+.face{
+    position: absolute;
+    /* opacity: 0; */
+    height: 250px;
+    width: 250px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(240, 248, 255, 0.203);
+    font-family:cursive;
+    font-size:40px;
+    font-weight:bolder;
+  z-index: -1;
+}
+
+.front {
+    transform: translateZ(126px);       
+
+   
+    
+}
+#para{
+    z-index: 2;
+    font-size: 30px;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    top:2%;
+    background-color:#212121 ;
+    position: relative;
+    left:2px;
+    
+    
+    top:20rem;  
+     
+}
+#para p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+   width: 100%;
+    height: fit-content;
+    color: rgba(255, 255, 255, 0.196);
+   
+}
+#span{
+    font-size: 15px;
+    background-color: transparent;
+    width: 100%;
+    height: 0px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+   
+    
+}
+#tag{
+    font-size: 15px;
+    line-height: 23px;
+   
+}
+#para img{
+   
+       height: 30px;
+       color: white;
+}
+.back{
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(126px);
+    /* transform: rotateZ(18deg); */
+    
+}
+  
+.left{
+    transform: rotateY(90deg)    rotateZ(90deg)   translateZ(126px);
+}
+  
+.right{
+    transform: rotateY(-90deg) translateZ(126px);
+    
+  }
+  
+.top{
+    transform: rotateX(90deg) translateZ(126px);
+    
+}
+  
+.bottom{
+    transform: rotateX(-90deg)  rotateZ(270deg)   translateZ(126px);
+       
+}
+@keyframes loader {
+    0% {
+        transform: rotateY(0) rotateX(0);
+        
+    }
+    16.6% {
+        transform: rotateY(90deg) rotateX(0);
+    }
+    33.3% {
+        transform: rotateY(90deg) rotateX(0) rotate(90deg);
+    }
+    50% {
+        transform: rotateY(180deg) rotateX(0) rotate(90deg);
+    }
+    66.6% {
+        transform: rotateY(180deg) rotateX(-90deg) rotate(90deg);
+    }
+    83.3% {
+        transform: rotateY(270deg) rotateX(-90deg) rotate(90deg);
+    }
+    to {
+        transform: rotateY(270deg) rotateX(-90deg) rotate(90deg) rotateX(90deg);
+    }
+}
+
+
+
+video{
+    position: fixed;
+    
+    height: 100vh; 
+    width: 100%;
+    bottom: 0;
+   
+    object-fit: cover;  
+    z-index: -555;
+   
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* from here non brain div start */
+#cover{
+    height: 400px;
+    width: 40px;
+    position: absolute;
+    z-index: 0;
+    bottom: 13rem;
+    left: 37.5rem;
+    background-color: #212121;
+}
