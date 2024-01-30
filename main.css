@@ -57,16 +57,13 @@ text-align: center;
     font-family: cursive ;
     animation: fade 4s linear;
 }
-#nav h3:hover{
-    color: rgba(0, 128, 0, 0.714);
 
-}
 #nav h3:active{
     color: rgba(255, 0, 0, 0.473);
-    font-size: 21.5px;
+   
 
 }
-
+    
 
 @keyframes fade {
     0%{
@@ -90,7 +87,7 @@ text-align: center;
    
    
     position: absolute;
-    top:30px;
+    top:60vh;
     height: 15vh;
     width: 100%;
     /* z-index: 858556; */
@@ -98,11 +95,168 @@ text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center ;
     gap: 100px;
    padding-left: 50px;
    
     
 
+}
+#cover{
+    /* border: 2px solid  black; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    height: 35px;
+    width:100px;
+    /* animation: fade2 8s linear; */
+    background-color: rgba(245, 222, 179, 0.832);
+ position: relative;
+ box-shadow: 10px 10px  15px  rgb(0, 0, 0);
+overflow: hidden;
+opacity: 0.8;
+    /* background-color: yellow; */
+}
+#cover_inside{
+    z-index: 5;
+    background-color: black;
+    height: 40.5px;
+    width: 100%;
+    position: absolute;
+    bottom: 36px;  
+    /* display: flex; 
+    justify-content: center;
+    align-items: center;
+     */
+    /* animation: slider 2s linear 1 forwards ; */
+   
+}
+#cover_inside a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    height: 100%;
+    left:0px;
+    text-decoration: none;
+   
+    width: 100%;
+    
+    position: absolute;
+    color: black;
+   background-color: wheat;
+}
+#cover_inside h3{
+   position: absolute;
+   top:4px;
+ 
+}
+
+
+#cover:hover{
+    height: 40px;
+    width:120px;
+ 
+    #cover_inside{
+        animation: slider 0.3s linear 1 forwards ;
+        box-shadow: 10px 10px  15px  rgb(0, 0, 0);
+        /* font-family: cursive;
+        font-size: 26px;
+        color: white; */
+        
+        
+      
+    }
+}
+#cover::before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    border-radius: 20px;
+    filter: blur(10px);
+    background-image: conic-gradient(
+        #ff0052 100deg,
+        transparent 120deg
+    ), conic-gradient(
+        #FFFF00 100deg,
+        transparent -120deg
+    );
+    animation: ani 2s infinite;
+}
+
+#cover::after{
+    /* box-shadow:  10px  15px  rgb(0, 0, 0); */
+    content: " Enter";
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 23px;
+    font-family: cursive;
+    font-weight: 3;
+    color: white(142, 168, 191, 0.905);
+    
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    border-radius: 20px;
+    background-color: pink;
+    
+}
+#cover:hover::after{
+    font-size: 25px;
+    font-weight: 5;
+}
+@keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    15%{
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    80%{
+        transform: rotate(180eg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes slider {
+   from{
+    transform: translateY(0px);
+   }
+to{ 
+    transform: translateY(37px);
+}
+    
+    }
+
+    
+
+#cover h2{
+    font-family: cursive;
+    color: rgba(0, 0, 0, 0.793);
+}
+
+@keyframes fade2 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 #nav h3{
     font-family: cursive;
@@ -287,4 +441,4 @@ video{
 
 
 
-/* from here non brain div start */
+
