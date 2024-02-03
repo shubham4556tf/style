@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add your other GSAP and ScrollTrigger animations here...
 
     // Scroll to the top of the first page when the link is clicked
-    document.querySelector('a').addEventListener('click', function(event) {
+    document.querySelector('#container').addEventListener('click', function(event) {
         event.preventDefault();
         window.scrollTo({
             top: 0,

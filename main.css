@@ -117,6 +117,7 @@ text-align: center;
 overflow: hidden;
 opacity: 0.8;
     /* background-color: yellow; */
+    
 }
 #cover_inside{
     z-index: 5;
@@ -129,8 +130,9 @@ opacity: 0.8;
     justify-content: center;
     align-items: center;
      */
+
     /* animation: slider 2s linear 1 forwards ; */
-   
+   pointer-events: auto; 
 }
 #cover_inside a{
     display: flex;
