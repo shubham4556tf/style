@@ -81,10 +81,10 @@ h1 p{
     width:7rem;
     /* animation: fade2 8s linear; */
     background-color: rgba(245, 222, 179, 0.832);
- position: relative;
- box-shadow: 10px 10px  15px  rgb(0, 0, 0);
-overflow: hidden;
-opacity: 0.8;
+     position: relative;
+    box-shadow: 10px 10px  15px  rgb(0, 0, 0);
+    overflow: hidden;
+    opacity: 0.8;
 
 }
 #cover_inside{
