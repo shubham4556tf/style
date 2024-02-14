@@ -1,0 +1,88 @@
+@media (max-width:1200px) { 
+    #para{
+        z-index: 2;
+        font-size: 2rem;
+        height: 90px;
+        width: 100rem;
+        display: inline-block;
+        justify-content: center;
+      display: flex;
+      align-items: center;
+    
+     
+        position: relative;
+        
+        top:42vh;
+       
+        
+       
+         
+    }
+    #para p{
+    
+   width: 100%;
+   height: 100%;
+  
+  left:0.3rem;
+   
+    color: rgba(255, 255, 255, 0.196);
+    
+        
+       
+    }
+    #span{
+       
+        font-size: 2.5vh;
+        width: 100vw;
+        height: 20%;
+      position:     absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 14px;
+
+        top:24rem;
+        color: rgba(255, 255, 255, 0.196);
+     left:2.5rem;
+        
+        
+        
+       
+        
+    }
+    .container .cube .face{
+      height:30vh ;
+      width: 55vw;
+      font-size: 200%;
+      
+     }
+     .back{
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(10vh);
+        /* transform: rotateZ(18deg); */
+        
+    }
+    .front {
+        transform: translateZ(10vh);       
+    } 
+    .left{
+        transform: rotateY(90deg)    rotateZ(90deg)   translateZ(10vh);
+    }
+      
+    .right{
+        transform: rotateY(-90deg) translateZ(10vh);
+        
+      }
+      
+    .top{
+        transform: rotateX(90deg) translateZ(10vh);
+        
+    }
+      
+    .bottom{
+        transform: rotateX(-90deg)  rotateZ(270deg)   translateZ(10vh);
+           
+    }
+    
+      
+  }

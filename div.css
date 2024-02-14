@@ -1,75 +1,29 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
-body{
-    height: 100vh;
-    width: 100% ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  rgba(33, 25, 25, 0.729);
-}
-.div{
+.parent{
     position: relative;
-    height: 200px;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.51);
-    /* border: 2px solid rgba(33, 25, 25, 0.729); */
-    border-radius: 10px;
-    box-shadow: 14px 14px  20px  rgba(0, 0, 0, 0.762);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
+    top:100px;
+    height: 10vh;
+    background-color: blue;
+    width: 100vw;
+    border: 7px solid black;
+ font-size: 3vh;
+ flex-wrap: wrap;
 }
-div::before {                   
-    content: "";
-    height: 200%;
-    width: 200%;
-    border-radius: 10px;
-    animation: ani 2s infinite  ;
-    filter: blur(50px);
-    position: absolute;
-    background-image: conic-gradient(
-        #ff0052 20deg,
-        transparent 120deg
-    );
-    opacity: 0;
+@media (max-width:376px) {
+    .parent .child1{
+        width: 30%;
+    }
 }
-div::after{
-    content: "";
-    height:95%;
-    width: 95%;
-    background-color: rgb(28, 26, 26);
-    position: absolute;
-    box-shadow: inset 14px 14px  20px  rgba(0, 0, 0, 0.762);
-    border-radius: 10px;
-    box-shadow: 14px 14px  20px  rgba(0, 0, 0, 0.762);
-
- /* animation: ani 3s infinite  ; */
-}
-div:hover::before{
-    opacity: 1;
-}
-@keyframes ani {
-    0%{
-        transform: rotate(0deg);
-    }
-    
-    15%{
-        transform: rotate(50deg);
-    }
-    50%{
-        transform: rotate(90deg);
-    }
-    80%{
-        transform: rotate(180eg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+.child1{
+    height: 100%;
+    width: 10%;
+    background-color: yellow;
+   border: 3px solid black;
+   font-size: 0.5em;
+   
 }
